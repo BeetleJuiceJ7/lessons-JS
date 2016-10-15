@@ -1,0 +1,2 @@
+git remote add origin https://github.com/BeetleJuiceJ7/my-site.git
+git push -u origin master
