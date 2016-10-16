@@ -12,3 +12,7 @@ gulp.task('default', function () {
     .pipe(notify('Done!'))
     .pipe(gulp.dest('app/'));
 });
+
+gulp.task('watch', function(){
+    gulp.watch('css/*.css', ['default'])
+})
