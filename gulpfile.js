@@ -1,8 +1,12 @@
 var gulp = require('gulp');
-	concatCss = require('gulp-concat-css');
+	var = concatCSS = require('gulp-concat-css'),
+	rename = require('gulp-rename'),
+	minifyCSS = require('gulp-minify-css');
 
 gulp.task('default', function () {
   return gulp.src('css/*.css')
-    .pipe(concatCss('bundle.css'))
+    .pipe(concatCSS('bundle.css'))
+    .pipe(rename('bundle-min.css'))
+    .pipe(nminifyCSS(''))
     .pipe(gulp.dest('app/'));
 });
