@@ -3,6 +3,6 @@ var gulp = require('gulp');
 
 gulp.task('default', function () {
   return gulp.src('css/*.css')
-    .pipe(concatCss('bundle.css'))
+    .pipe(concatCss('css/bundle.css'))
     .pipe(gulp.dest('app/'));
 });
